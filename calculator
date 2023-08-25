@@ -1,0 +1,70 @@
+add = 1
+subtract = 2
+multiply = 3
+divide = 4
+yes = 5
+no = 6
+print("...............................")
+print("Welcome To My Calculator Please")
+first_number = input("enter first number:     ")
+second_number = input("enter second number:   ")
+num1 = first_number
+num2 = second_number
+print("......................")
+print("enter an operator")
+print("1.       Addition")
+print("2.    Subtraction")
+print("3. Multiplication")
+print("4.       Division")
+operator = input()
+
+if operator == "1":
+    print("the sum is " + str(int(num1) + int(num2)))
+    lastnum = (str(int(num1) + int(num2)))
+
+elif operator == "2":
+    print("the sum is " + str(int(num1) - int(num2)))
+    lastnum = (str(int(num1) - int(num2))) 
+
+elif operator == "3":
+    print("the sum is " + str(int(num1) * int(num2)))
+    lastnum = (str(int(num1) * int(num2)))
+
+elif operator == "4":
+    print("the sum is " + str(int(num1) / int(num2)))
+    lastnum = (str(int(num1) / int(num2))) 
+
+
+while True:
+        print("enter next number:   ")
+        next_number = input()
+        nextnum = next_number
+        print("......................")
+        print("enter an operator")
+        print("1.       Addition")
+        print("2.    Subtraction")
+        print("3. Multiplication")
+        print("4.       Division")
+        calc = input()
+
+        if calc == "1":
+            print("the sum is " + str(int(lastnum) + int(nextnum)))
+            lastnum = (str(int(lastnum) + int(nextnum)))
+
+        if calc == "2":
+            print("the sum is " + str(int(lastnum) - int(nextnum)))
+            lastnum = (str(int(lastnum) - int(nextnum)))
+
+        if calc == "3":
+            print("the sum is " + str(int(lastnum) * int(nextnum)))
+            lastnum = (str(int(lastnum) * int(nextnum)))
+
+        if calc == "4":
+            print("the sum is " + str(int(lastnum) / int(nextnum)))
+            lastnum = (str(int(lastnum) / int(nextnum)))
+
+        end = input("if you want to exit enter yes or no:       ")
+        if end == no:
+            continue
+        elif end == yes:
+            break
